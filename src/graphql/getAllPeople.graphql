@@ -1,0 +1,10 @@
+query GetAllPeople($pageSize: Int) {
+  allPeople(first: $pageSize) {
+    people {
+      name
+      birthYear
+      gender
+      height
+    }
+  }
+}
